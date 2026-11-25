@@ -1,0 +1,235 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Ảnh Keria đẹp nhất</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700&display=swap">
+<style>
+/* Layout: tiêu đề + lưới ảnh dọc 4:5; bấm ảnh mở khung thông tin. */
+:root {
+  --bg: #F0F2F0;
+  --surface: #FFFFFF;
+  --ink: #18201E;
+  --muted: #5B6662;
+  --line: #D8DDDA;
+  --accent: #2447B8;
+  --accent-ink: #FFFFFF;
+  --accent-soft: #E3E9FA;
+  --scrim: rgba(16, 22, 20, 0.62);
+  --font-display: "Bricolage Grotesque", "Be Vietnam Pro", system-ui, sans-serif;
+  --font-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101413;
+    --surface: #19201E;
+    --ink: #E7ECEA;
+    --muted: #98A39F;
+    --line: #2A3330;
+    --accent: #8FA6FF;
+    --accent-ink: #0E1430;
+    --accent-soft: #212B4F;
+    --scrim: rgba(0, 0, 0, 0.7);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101413;
+  --surface: #19201E;
+  --ink: #E7ECEA;
+  --muted: #98A39F;
+  --line: #2A3330;
+  --accent: #8FA6FF;
+  --accent-ink: #0E1430;
+  --accent-soft: #212B4F;
+  --scrim: rgba(0, 0, 0, 0.7);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 15px/1.55 var(--font-body);
+  padding-block: 32px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1120px; margin: 0 auto; }
+button { font: inherit; color: inherit; cursor: pointer; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+header { display: flex; flex-wrap: wrap; gap: 12px 32px; align-items: end; justify-content: space-between; margin-bottom: 28px; }
+header > div { min-width: 0; }
+h1 { font: 700 clamp(1.9rem, 4.4vw, 2.8rem)/1.08 var(--font-display); letter-spacing: -0.02em; margin: 0 0 8px; text-wrap: balance; }
+.lede { color: var(--muted); margin: 0; max-width: 52ch; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); gap: 20px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: flex; flex-direction: column; min-width: 0; overflow: hidden; }
+.thumb { position: relative; display: block; width: 100%; padding: 0; border: 0; background: var(--line); aspect-ratio: 4 / 5; overflow: hidden; }
+.thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+.thumb:hover img { transform: scale(1.03); }
+.tag { position: absolute; left: 10px; top: 10px; background: var(--surface); color: var(--ink); font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border-radius: 3px; }
+.meta { padding: 14px 16px 16px; min-width: 0; }
+.meta h2 { font: 600 1.0625rem/1.3 var(--font-display); margin: 0; overflow-wrap: anywhere; }
+.meta p { margin: 2px 0 0; color: var(--muted); font-size: 0.875rem; overflow-wrap: anywhere; }
+.overlay { position: fixed; inset: 0; z-index: 20; background: var(--scrim); overflow-y: auto;
+  padding-block: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-bottom, 0px));
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.panel { position: relative; max-width: 940px; margin: 0 auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); overflow: hidden; }
+.d-media { background: var(--line); min-height: 280px; }
+.d-media img { width: 100%; height: 100%; object-fit: cover; display: block; max-height: 82vh; }
+.d-body { padding: 28px 28px 24px; min-width: 0; display: flex; flex-direction: column; gap: 14px; }
+.d-pos { margin: 0; color: var(--muted); font-size: 0.8125rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.d-body h2 { font: 700 1.75rem/1.15 var(--font-display); letter-spacing: -0.01em; margin: 0; text-wrap: balance; overflow-wrap: anywhere; }
+dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; font-size: 0.9375rem; }
+dt { color: var(--muted); }
+dd { margin: 0; overflow-wrap: anywhere; }
+.d-desc { margin: 0; max-width: 60ch; overflow-wrap: anywhere; white-space: pre-line; }
+.d-nav { display: flex; gap: 10px; justify-content: space-between; margin-top: auto; padding-top: 6px; }
+.d-nav button { background: none; border: 1px solid var(--line); border-radius: var(--radius); padding: 8px 12px; font-size: 0.875rem; }
+.d-nav button:hover { border-color: var(--accent); }
+.close { position: absolute; right: 10px; top: 10px; z-index: 2; width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); font-size: 1.25rem; line-height: 1; }
+.close:hover { border-color: var(--accent); }
+
+@media (max-width: 720px) {
+  .panel { grid-template-columns: minmax(0, 1fr); }
+  .d-media { min-height: 0; aspect-ratio: 4 / 5; max-height: 60vh; }
+  .d-body { padding: 20px 18px 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .thumb img { transition: none; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Ảnh Keria đẹp nhất</h1>
+      <p class="lede">Bấm vào ảnh để xem thông tin.</p>
+    </div>
+  </header>
+  <main class="grid" id="grid"></main>
+</div>
+
+<div class="overlay" id="overlay" hidden>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="d-title">
+    <button class="close" id="d-close" type="button" aria-label="Đóng">×</button>
+    <div class="d-media"><img id="d-img" alt=""></div>
+    <div class="d-body">
+      <p class="d-pos" id="d-pos"></p>
+      <h2 id="d-title"></h2>
+      <dl id="d-info"></dl>
+      <p class="d-desc" id="d-desc"></p>
+      <div class="d-nav">
+        <button type="button" id="d-prev">← Ảnh trước</button>
+        <button type="button" id="d-next">Ảnh sau →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ===== Danh sách ảnh: thay các mục mẫu bằng ảnh thật =====
+   id: mã cố định của ảnh
+   src: đường dẫn ảnh (bỏ trống thì hiện ảnh minh họa)
+   sample: true để gắn nhãn "Ảnh mẫu" */
+const PHOTOS = [
+  { id: "p1", title: "Ảnh 1", src: "img/p1.jpg", author: "True", place: "", date: "24/11/2026", desc: "Đẹp quá trời đẹp luôn rồi", hue: 205 },
+  { id: "p2", title: "Ảnh 2", src: "img/p2.jpg", author: "True", place: "", date: "24/11/2026", desc: "Thế giới chỉ đến thế là cùng", hue: 150 },
+  { id: "p3", title: "Ảnh 3", src: "img/p3.jpg", author: "True", place: "", date: "24/11/2026", desc: "Tôi tài giỏi, bạn cũng tạm", hue: 28 },
+  { id: "p4", title: "Ảnh 4", src: "img/p4.jpg", author: "True", place: "", date: "24/11/2026", desc: "Quái vật thiên tài", hue: 280 },
+  { id: "p5", title: "Ảnh 5", src: "img/p5.jpg", author: "True", place: "", date: "24/11/2026", desc: "Dễ thương", hue: 340 },
+  { id: "p6", title: "Ảnh 6", author: "True", place: "", date: "24/11/2026", desc: "Ánh mắt lạnh lùng", src: "img/p6.jpg", hue: 220 }
+];
+const FIELDS = [["author", "Tác giả"], ["place", "Địa điểm"], ["date", "Ngày chụp"]];
+
+function art(hue, i) {
+  const a = `hsl(${hue} 38% 72%)`, b = `hsl(${(hue + 30) % 360} 34% 46%)`, c = `hsl(${(hue + 60) % 360} 30% 26%)`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect width="800" height="1000" fill="url(#g)"/><circle cx="${480 + i * 24}" cy="330" r="90" fill="hsl(${hue} 60% 90%)" opacity="0.85"/><path d="M0 640 C160 560 300 600 430 540 S690 520 800 590 V1000 H0Z" fill="${b}"/><path d="M0 760 C200 690 360 740 520 700 S720 690 800 730 V1000 H0Z" fill="${c}"/></svg>`;
+  return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+}
+PHOTOS.forEach((p, i) => { p.img = p.src || art(p.hue || 200, i); });
+
+const $ = (id) => document.getElementById(id);
+const state = { open: -1 };
+let opener = null;
+
+function el(tag, cls, text) {
+  const n = document.createElement(tag);
+  if (cls) n.className = cls;
+  if (text != null) n.textContent = text;
+  return n;
+}
+
+function buildGrid() {
+  const grid = $("grid");
+  PHOTOS.forEach((p, i) => {
+    const card = el("article", "card");
+    const thumb = el("button", "thumb");
+    thumb.type = "button";
+    thumb.setAttribute("aria-label", "Xem thông tin: " + p.title);
+    const img = el("img");
+    img.src = p.img; img.alt = p.title; img.loading = "lazy";
+    thumb.append(img);
+    if (p.sample) thumb.append(el("span", "tag", "Ảnh mẫu"));
+    thumb.addEventListener("click", () => openDetail(i, thumb));
+
+    const meta = el("div", "meta");
+    meta.append(el("h2", "", p.title));
+    if (p.author) meta.append(el("p", "", p.author));
+
+    card.append(thumb, meta);
+    grid.append(card);
+  });
+}
+
+/* ===== Khung thông tin ảnh ===== */
+function paintDetail() {
+  const p = PHOTOS[state.open];
+  $("d-img").src = p.img; $("d-img").alt = p.title;
+  $("d-pos").textContent = `Ảnh ${state.open + 1} / ${PHOTOS.length}`;
+  $("d-title").textContent = p.title;
+  const dl = $("d-info"); dl.replaceChildren();
+  FIELDS.forEach(([k, label]) => {
+    if (!p[k]) return;
+    dl.append(el("dt", "", label), el("dd", "", p[k]));
+  });
+  $("d-desc").textContent = p.desc || "";
+}
+function openDetail(i, from) {
+  state.open = i; opener = from || null;
+  paintDetail();
+  $("overlay").hidden = false;
+  document.body.style.overflow = "hidden";
+  $("d-close").focus();
+}
+function closeDetail() {
+  state.open = -1;
+  $("overlay").hidden = true;
+  document.body.style.overflow = "";
+  if (opener && document.contains(opener)) opener.focus();
+}
+function step(d) { state.open = (state.open + d + PHOTOS.length) % PHOTOS.length; paintDetail(); }
+
+$("d-close").addEventListener("click", closeDetail);
+$("overlay").addEventListener("click", (e) => { if (e.target === $("overlay")) closeDetail(); });
+$("d-prev").addEventListener("click", () => step(-1));
+$("d-next").addEventListener("click", () => step(1));
+document.addEventListener("keydown", (e) => {
+  if (state.open < 0) return;
+  if (e.key === "Escape") { closeDetail(); return; }
+  if (e.key === "ArrowLeft") step(-1);
+  if (e.key === "ArrowRight") step(1);
+  if (e.key === "Tab") {
+    const f = [...$("overlay").querySelectorAll("button:not(:disabled)")];
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+});
+
+buildGrid();
+</script>
+
+
+</body></html>
